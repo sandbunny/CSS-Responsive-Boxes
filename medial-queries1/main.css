@@ -1,3 +1,46 @@
 body {
-  background: blanchedalmond;
+  background: pink;
+}
+
+* {
+  border: 1px solid green;
+}
+
+.container {
+  display:flex;
+min-height: 100vh;
+flex-direction: column;
+justify-content: space-between;
+}
+
+header {
+  flex-grow: 1;
+}
+
+
+main {
+  flex-grow: 3;
+}
+
+
+footer {
+  flex-grow: 1;
+}
+
+@media (min-width:600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+header{
+  width: 100%;
+}
+
+main, footer, header {
+  margin: 1em;
+}
+
+
+
+
 }
